@@ -3,7 +3,7 @@ var cookieValue = $.cookie("faceOff");
 
 if(typeof cookieValue == "undefined"){
 	//If it does not exist, give option to disable for hours
-	$("#stream_pagelet").prepend('Hide FB feed for, hours: <input id="hours" type="number"/><button id="hideFeedButton">Hide Feed!</button>');
+	$("#stream_pagelet").prepend('Hide FB feed for, hours: <input id="hours" value="1" type="number"/><button id="hideFeedButton">Hide Feed!</button>');
 	$("#hideFeedButton").click(function(){
 		//Get hours
 		var hours = $("#hours").val();
